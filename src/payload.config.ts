@@ -29,6 +29,9 @@ export default buildConfig({
   db: mongooseAdapter({
     url: process.env.DATABASE_URI,
   }),
+  //usar solo cuando se testea el front
+  csrf: ["http://localhost:3000"],
+  cors: ["http://localhost:3000"],
   onInit: async (payload) => {
     // Limpiar la base de datos
     // const collections = ["users", "items", "media", "consumptions"]; // Lista de tus colecciones

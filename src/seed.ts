@@ -6,22 +6,22 @@ export const seed = async (payload: Payload): Promise<void> => {
       {
         email: "admin@payloadcms.com",
         password: "test",
-        firstName: "Payload",
-        lastName: "CMS",
+        firstName: "Admin",
+        lastName: "User",
         roles: ["admin"],
       },
       {
         email: "catEditor@payloadcms.com",
         password: "test",
-        firstName: "Site1",
-        lastName: "User",
+        firstName: "Editor",
+        lastName: "Items",
         roles: ["editorCat"],
       },
       {
         email: "ambEditor@payloadcms.com",
         password: "test",
-        firstName: "Site1",
-        lastName: "User",
+        firstName: "Editor",
+        lastName: "Consumo",
         roles: ["editorAmb"],
       },
     ];
